@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 import datetime
-
+from django.contrib.auth.models import User
 
 def index(request):
     publications = Pages.objects.all()

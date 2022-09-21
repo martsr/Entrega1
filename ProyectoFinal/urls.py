@@ -14,11 +14,6 @@ urlpatterns = [
     path('UserAdmin/', include('UserAdmin.urls')),
     path('Messages/', include('Messages.urls')),
     path('AboutUs/', aboutUs, name ='aboutUs'),
-    path('Pages/', include('Pages.urls')),
-    # path('Pages/', get_pages, name ='viewPages'),
-    # path('Page/create', create_page, name ='createPage'),
-    # path('Page/delete/<int:id>', delete_page, name='deletePage'),
-    # path('Page/update/<int:id>', update_page, name='updatePage'),
-    # path('Page/view/<int:id>' , get_page, name='viewPage')
+    path('Pages/', include('Pages.urls'))
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

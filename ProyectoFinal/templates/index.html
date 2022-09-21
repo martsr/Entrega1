@@ -103,10 +103,10 @@
                             </ul>
                             </li>
                             {%else%}
-                            <a href="{% url 'UserRegister'%}" align=right><button class="btn btn-outline-success">Sign
+                            <a href="{% url 'UserRegister'%}" align=right><button class="btn btn-outline-success btn-logIn-signIn">Sign
                                     Up</button></a>
                             <a style='margin:5px;'></a>
-                            <a href="{% url 'UserLogin'%}" align=right><button class="btn btn-outline-success">Log
+                            <a href="{% url 'UserLogin'%}" align=right><button class="btn btn-outline-success btn-logIn-signIn">Log
                                     In</button></a>
                             {%endif%}
                             </ul>
@@ -151,8 +151,13 @@
                     <div>
                         <div class="paddingLR">
                             <h2>Connect with people from all over the world!</h2>
-                            <a href="{% url 'UserRegister'%}"><button class="btn-color-primary btn btn-primary">Star
+                            {%if user.is_authenticated%}
+                            <a href="{% url 'createPage'%}"><button class="btn-color-primary btn btn-primary">Start
+                                now!</button></a>
+                            {% else %}
+                            <a href="{% url 'UserRegister'%}"><button class="btn-color-primary btn btn-primary">Start
                                     now!</button></a>
+                            {%endif%}
                         </div>
                     </div>
                 </div>
