@@ -1,12 +1,12 @@
 
 # Proyecto final del curso Python
 
-A brief description of what this project does and who it's for
+Creacion de un blog con servicio de mensajeria entre los usuarios
 
 
 ## Martin Kachinovsky
 
-info...
+Realizacion de funciones de mensajeria, vistas  y  creacion de usuarios  
 
 ## Mario Gonzalez
 
@@ -14,7 +14,7 @@ Realizacion de las funciones, vistas, template de pages y los estilos de la pagi
 
 ## Martina Rivero
 
-info...
+Realizacion y edicion de pagina
 
 
 ## Herramientas utilizadas
